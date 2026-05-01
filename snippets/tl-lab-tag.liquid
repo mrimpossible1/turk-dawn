@@ -1,0 +1,18 @@
+{%- comment -%}
+  Boxed lab tag.
+  Usage:
+    {% render 'tl-lab-tag',
+       primary: 'TURK LABS',
+       secondary: 'RESEARCH DIVISION',
+       micro: 'LAB · N°47 · MMXXVI' %}
+{%- endcomment -%}
+{%- liquid
+  assign p = primary | default: 'TURK LABS'
+  assign s = secondary | default: 'RESEARCH DIVISION'
+  assign m = micro | default: 'LAB · N°47 · MMXXVI'
+-%}
+<span class="tl-labtag">
+  <b>{{ p }}</b>
+  <span>{{ s }}</span>
+  <span style="font-size:9px;opacity:0.7;display:block;letter-spacing:0.18em;">{{ m }}</span>
+</span>

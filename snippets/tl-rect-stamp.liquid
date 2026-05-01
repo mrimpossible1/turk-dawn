@@ -1,0 +1,14 @@
+{%- comment -%}
+  Rectangular "TESTED" rubber-stamp.
+  Usage: {% render 'tl-rect-stamp', text: 'TESTED · MMXXVI', color: '#8a1c1c', tilt: -4 %}
+{%- endcomment -%}
+{%- liquid
+  assign t = text | default: 'TESTED · MMXXVI'
+  assign c = color | default: '#8a1c1c'
+  assign deg = tilt | default: 0
+-%}
+<span class="tl-rect-stamp tl-distressed" style="display:inline-block;transform:rotate({{ deg }}deg);">
+  <span style="display:inline-block;border:3px double {{ c }};color:{{ c }};padding:10px 18px;font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:0.2em;font-size:18px;text-transform:uppercase;line-height:1.15;text-align:center;">
+    {{ t }}
+  </span>
+</span>

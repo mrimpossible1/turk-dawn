@@ -1,0 +1,36 @@
+{%- comment -%}
+  Reusable Turk Labs hex research seal.
+  Usage:
+    {% render 'tl-hex-seal', size: 160, color: '#8a1c1c', lab_no: '47', year: 'MMXXVI' %}
+{%- endcomment -%}
+{%- liquid
+  assign s = size | default: 160
+  assign c = color | default: '#8a1c1c'
+  assign ln = lab_no | default: '47'
+  assign yr = year | default: 'MMXXVI'
+-%}
+<svg width="{{ s }}" height="{{ s | times: 0.96 }}" viewBox="0 0 200 192" aria-hidden="true" style="color:{{ c }}" class="tl-hex-seal tl-distressed">
+  <g fill="none" stroke="currentColor">
+    <polygon points="100,8 180,52 180,140 100,184 20,140 20,52" stroke-width="3" />
+    <polygon points="100,18 172,57 172,135 100,174 28,135 28,57" stroke-width="0.8" />
+    <polygon points="100,26 162,61 162,131 100,166 38,131 38,61" stroke-width="2" />
+  </g>
+  <g fill="currentColor">
+    <polygon points="100,52 108.5,76 134,76 113.7,91 121.5,116 100,101 78.5,116 86.3,91 66,76 91.5,76" />
+    <rect x="58" y="124" width="84" height="6" />
+    <rect x="48" y="116" width="8" height="22" />
+    <rect x="144" y="116" width="8" height="22" />
+    <rect x="40" y="120" width="6" height="14" />
+    <rect x="154" y="120" width="6" height="14" />
+  </g>
+  <g fill="currentColor" font-family='"JetBrains Mono", monospace' font-size="9" font-weight="700" letter-spacing="0.14em">
+    <text x="44" y="58">LAB.</text>
+    <text x="44" y="70">{{ yr }}</text>
+    <text x="156" y="58" text-anchor="end">N°</text>
+    <text x="156" y="70" text-anchor="end">{{ ln }}</text>
+  </g>
+  <g fill="currentColor" font-family='"JetBrains Mono", monospace' font-size="8.5" font-weight="700" letter-spacing="0.24em">
+    <text x="100" y="150" text-anchor="middle">RESEARCH</text>
+    <text x="100" y="161" text-anchor="middle">DIVISION</text>
+  </g>
+</svg>

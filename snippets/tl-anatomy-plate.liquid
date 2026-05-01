@@ -1,0 +1,83 @@
+{%- comment -%}
+  Engraved anatomical plate — hero asset.
+  Usage: {% render 'tl-anatomy-plate' %}
+{%- endcomment -%}
+<svg viewBox="0 0 540 560" width="100%" height="auto" aria-hidden="true" style="display:block;color:var(--tl-ink);">
+  <defs>
+    <pattern id="tl-h45" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="3" stroke="currentColor" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="tl-h135" x="0" y="0" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="3.2" stroke="currentColor" stroke-width="0.45"/>
+    </pattern>
+    <pattern id="tl-hx" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.45"/>
+      <line x1="0" y1="0" x2="4" y2="0" stroke="currentColor" stroke-width="0.45"/>
+    </pattern>
+    <pattern id="tl-hd" x="0" y="0" width="2.2" height="2.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="2.2" stroke="currentColor" stroke-width="0.55"/>
+    </pattern>
+  </defs>
+  <rect x="10" y="10" width="520" height="540" fill="none" stroke="currentColor" stroke-width="1.4"/>
+  <rect x="16" y="16" width="508" height="528" fill="none" stroke="currentColor" stroke-width="0.4"/>
+  <g stroke="currentColor" stroke-width="0.7" fill="none">
+    <circle cx="46" cy="510" r="12"/>
+    <line x1="32" y1="510" x2="60" y2="510"/>
+    <line x1="46" y1="496" x2="46" y2="524"/>
+  </g>
+  <g stroke="currentColor" stroke-width="0.7">
+    <line x1="80" y1="528" x2="460" y2="528"/>
+  </g>
+  <g fill="currentColor" font-family='"JetBrains Mono", monospace' font-size="8" font-weight="700" letter-spacing="0.12em">
+    <text x="80" y="540">0</text>
+    <text x="270" y="540" text-anchor="middle">50</text>
+    <text x="460" y="540" text-anchor="end">100 CM</text>
+  </g>
+  <g transform="translate(270 270)">
+    <ellipse cx="0" cy="200" rx="120" ry="8" fill="currentColor" opacity="0.18"/>
+    <path d="M -28 -190 Q -34 -170 -30 -150 Q -28 -134 -20 -126 L 20 -126 Q 28 -134 30 -150 Q 34 -170 28 -190 Q 20 -206 0 -208 Q -20 -206 -28 -190 Z" fill="url(#tl-h135)" stroke="currentColor" stroke-width="1.3"/>
+    <path d="M -20 -126 Q 0 -118 20 -126" stroke="currentColor" stroke-width="0.7" fill="none"/>
+    <path d="M -30 -188 Q -28 -206 0 -210 Q 28 -206 30 -188 Q 22 -198 0 -200 Q -22 -198 -30 -188 Z" fill="currentColor"/>
+    <path d="M -16 -126 L -22 -108 L 22 -108 L 16 -126 Z" fill="url(#tl-h45)" stroke="currentColor" stroke-width="1"/>
+    <path d="M -22 -108 Q -56 -108 -100 -86 Q -120 -74 -130 -56 L 130 -56 Q 120 -74 100 -86 Q 56 -108 22 -108 Z" fill="url(#tl-h45)" stroke="currentColor" stroke-width="1.3"/>
+    <path d="M -130 -56 Q -148 -42 -148 -10 Q -140 0 -126 -2 Q -112 -22 -106 -50 Z" fill="url(#tl-hd)" stroke="currentColor" stroke-width="1.1"/>
+    <path d="M 130 -56 Q 148 -42 148 -10 Q 140 0 126 -2 Q 112 -22 106 -50 Z" fill="url(#tl-hd)" stroke="currentColor" stroke-width="1.1"/>
+    <path d="M -148 -10 Q -156 30 -148 70 Q -132 76 -124 60 Q -120 20 -126 -2 Z" fill="url(#tl-h45)" stroke="currentColor" stroke-width="1.1"/>
+    <path d="M 148 -10 Q 156 30 148 70 Q 132 76 124 60 Q 120 20 126 -2 Z" fill="url(#tl-h45)" stroke="currentColor" stroke-width="1.1"/>
+    <path d="M -100 -56 Q -100 -8 -8 6 L 8 6 Q 100 -8 100 -56 Z" fill="url(#tl-h45)" stroke="currentColor" stroke-width="1.4"/>
+    <line x1="0" y1="-48" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+    <path d="M -94 -28 Q -54 -14 -10 -4" stroke="currentColor" stroke-width="0.6" fill="none"/>
+    <path d="M 94 -28 Q 54 -14 10 -4" stroke="currentColor" stroke-width="0.6" fill="none"/>
+    <path d="M -54 6 L -62 100 L 62 100 L 54 6 Z" fill="url(#tl-h45)" stroke="currentColor" stroke-width="1.4"/>
+    <line x1="0" y1="6" x2="0" y2="100" stroke="currentColor" stroke-width="0.8"/>
+    <path d="M -50 24 Q 0 30 50 24" stroke="currentColor" stroke-width="0.6" fill="none"/>
+    <path d="M -52 48 Q 0 54 52 48" stroke="currentColor" stroke-width="0.6" fill="none"/>
+    <path d="M -56 72 Q 0 78 56 72" stroke="currentColor" stroke-width="0.6" fill="none"/>
+    <path d="M -100 -8 Q -100 30 -76 60 L -62 100 L -82 96 Q -98 60 -100 -8 Z" fill="url(#tl-hx)" stroke="currentColor" stroke-width="0.9"/>
+    <path d="M 100 -8 Q 100 30 76 60 L 62 100 L 82 96 Q 98 60 100 -8 Z" fill="url(#tl-hx)" stroke="currentColor" stroke-width="0.9"/>
+    <line x1="-62" y1="100" x2="62" y2="100" stroke="currentColor" stroke-width="1.2"/>
+  </g>
+  <g font-family='"JetBrains Mono", monospace' font-size="9.5" letter-spacing="0.2em" font-weight="700" fill="currentColor">
+    <text x="34" y="46">FIG. VII</text>
+    <text x="34" y="62">MUSCULUS</text>
+    <text x="34" y="74">HUMANUS</text>
+    <line x1="34" y1="84" x2="100" y2="84" stroke="currentColor" stroke-width="0.6"/>
+    <text x="34" y="100" font-size="8.5">STRUCTURA</text>
+    <text x="34" y="112" font-size="8.5">FORTITUDO</text>
+    <text x="34" y="124" font-size="8.5">VICTORIA</text>
+  </g>
+  <rect x="380" y="36" width="130" height="92" fill="none" stroke="currentColor" stroke-width="1"/>
+  <g font-family='"JetBrains Mono", monospace' font-size="9" letter-spacing="0.16em" font-weight="700" fill="currentColor">
+    <text x="392" y="58">LAB REPORT</text>
+    <text x="392" y="72">N°247</text>
+    <line x1="392" y1="80" x2="500" y2="80" stroke="currentColor" stroke-width="0.5"/>
+    <text x="392" y="96">SUBJ: ATHLETES</text>
+    <text x="392" y="110">VERIFIED.</text>
+    <text x="392" y="122">TURK LABS.</text>
+  </g>
+  <rect x="392" y="430" width="120" height="44" fill="none" stroke="currentColor" stroke-width="1"/>
+  <g font-family='"JetBrains Mono", monospace' font-size="10" letter-spacing="0.22em" font-weight="700" fill="currentColor">
+    <text x="452" y="450" text-anchor="middle">VERIFIED</text>
+    <text x="452" y="466" text-anchor="middle">MMXXVI</text>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+{%- comment -%}
+  Circular Quality-Control stamp.
+  Usage: {% render 'tl-circle-stamp', size: 130, color: '#8a1c1c', top: 'QUALITY · CONTROL · TURK LABS', year: 'MMXXVI' %}
+{%- endcomment -%}
+{%- liquid
+  assign s = size | default: 130
+  assign c = color | default: '#8a1c1c'
+  assign top = top | default: 'QUALITY · CONTROL · TURK LABS'
+  assign yr = year | default: 'MMXXVI'
+  assign uid = 'cs-' | append: s | append: '-' | append: c | replace: '#', ''
+-%}
+<svg width="{{ s }}" height="{{ s }}" viewBox="0 0 140 140" aria-hidden="true" style="color:{{ c }}" class="tl-circle-stamp tl-distressed">
+  <defs>
+    <path id="{{ uid }}-top" d="M 70 70 m -52 0 a 52 52 0 1 1 104 0" fill="none"/>
+  </defs>
+  <circle cx="70" cy="70" r="62" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <circle cx="70" cy="70" r="56" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <circle cx="70" cy="70" r="40" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <text fill="currentColor" font-family='"JetBrains Mono", monospace' font-size="8.5" font-weight="700" letter-spacing="0.32em">
+    <textPath href="#{{ uid }}-top" startOffset="50%" text-anchor="middle">{{ top }}</textPath>
+  </text>
+  <g fill="currentColor">
+    <circle cx="14" cy="70" r="1.5"/>
+    <circle cx="126" cy="70" r="1.5"/>
+  </g>
+  <g transform="translate(70 70)">
+    <text text-anchor="middle" y="-4" fill="currentColor" font-family='"Oswald", sans-serif' font-size="22" font-weight="700">★</text>
+    <text text-anchor="middle" y="14" fill="currentColor" font-family='"JetBrains Mono", monospace' font-size="9" font-weight="700" letter-spacing="0.22em">{{ yr }}</text>
+  </g>
+</svg>
