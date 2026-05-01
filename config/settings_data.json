@@ -1,20 +1,70 @@
-{%- comment -%}
-  Sample settings_data.json overrides for Dawn.
-  Merge into config/settings_data.json under "current" or use as a preset.
-  Captures: brand colors, fonts, button radius=0, density.
-{%- endcomment -%}
 {
   "current": {
-    "colors_solid_button_labels": "#f3ead2",
-    "colors_accent_1": "#8a1c1c",
-    "colors_accent_2": "#14110b",
-    "colors_text": "#14110b",
-    "colors_outline_button_labels": "#14110b",
-    "colors_background_1": "#ece2c8",
-    "colors_background_2": "#f3ead2",
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#ece2c8",
+          "background_gradient": "",
+          "text": "#14110b",
+          "button": "#8a1c1c",
+          "button_label": "#f3ead2",
+          "secondary_button_label": "#14110b",
+          "shadow": "#14110b"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#f3ead2",
+          "background_gradient": "",
+          "text": "#14110b",
+          "button": "#14110b",
+          "button_label": "#f3ead2",
+          "secondary_button_label": "#14110b",
+          "shadow": "#14110b"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#14110b",
+          "background_gradient": "",
+          "text": "#ece2c8",
+          "button": "#8a1c1c",
+          "button_label": "#f3ead2",
+          "secondary_button_label": "#ece2c8",
+          "shadow": "#000000"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "#8a1c1c",
+          "background_gradient": "",
+          "text": "#f3ead2",
+          "button": "#14110b",
+          "button_label": "#f3ead2",
+          "secondary_button_label": "#f3ead2",
+          "shadow": "#14110b"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#d4ccb8",
+          "background_gradient": "",
+          "text": "#14110b",
+          "button": "#8a1c1c",
+          "button_label": "#f3ead2",
+          "secondary_button_label": "#14110b",
+          "shadow": "#14110b"
+        }
+      }
+    },
 
     "type_header_font": "oswald_n7",
     "type_body_font": "roboto_slab_n4",
+    "heading_scale": 110,
+    "body_scale": 100,
+
+    "page_width": 1400,
+    "spacing_sections": 56,
 
     "buttons_radius": 0,
     "buttons_border_thickness": 1,
@@ -33,15 +83,13 @@
     "variant_pills_border_thickness": 1,
     "variant_pills_border_opacity": 100,
 
+    "card_style": "standard",
     "card_border_thickness": 1,
     "card_border_opacity": 100,
     "card_corner_radius": 0,
 
     "media_radius": 0,
     "media_border_thickness": 1,
-
-    "page_width": 1400,
-    "spacing_sections": 56,
 
     "badge_corner_radius": 0,
     "badge_position": "bottom left",
