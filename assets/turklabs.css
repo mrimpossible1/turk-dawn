@@ -332,11 +332,11 @@ p, .rte p, .rte li { font-family: "Roboto Slab", Georgia, serif; font-weight: 40
   font-family: "Roboto Slab", serif !important;
   font-size: 19px !important;
   line-height: 1.5;
-  max-width: 50ch;
 }
 .banner__box {
   background: transparent !important;
   padding: 0 !important;
+  text-align: inherit;
 }
 
 /* ===== Reusable Turk Labs primitives (consumed by snippets) ===== */
