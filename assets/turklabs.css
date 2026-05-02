@@ -235,7 +235,7 @@ p, .rte p, .rte li { font-family: "Roboto Slab", Georgia, serif; font-weight: 40
   letter-spacing: 0.02em;
   color: var(--tl-ink) !important;
 }
-.card__information { padding: 18px 20px; }
+.card__information { padding: 16px 24px 20px; }
 .price__regular, .price-item--regular, .price__sale .price-item--last,
 .card .price-item, .price__container .price-item {
   font-family: "Oswald", sans-serif !important;
