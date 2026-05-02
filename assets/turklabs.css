@@ -264,9 +264,8 @@ p, .rte p, .rte li { font-family: "Roboto Slab", Georgia, serif; font-weight: 40
 /* ===== Product page ===== */
 .product__title h1, .product__title .h1 {
   font-family: "Oswald", sans-serif !important;
-  font-size: clamp(32px, 4vw, 52px) !important;
+  font-size: clamp(40px, 5vw, 72px) !important;
   text-transform: uppercase;
-  word-break: break-word;
 }
 .product__info-container .price__regular .price-item,
 .product__info-container .price__sale .price-item {
