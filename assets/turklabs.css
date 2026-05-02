@@ -171,14 +171,14 @@ p, li, .rte p { font-family: "Roboto Slab", Georgia, serif; font-weight: 400; li
   text-transform: uppercase;
   color: var(--tl-ink) !important;
 }
-.header__inline-menu .list-menu--inline { gap: 28px; }
-.header__inline-menu .list-menu--inline li + li::before {
+.header__inline-menu .list-menu--inline { gap: 0; }
+.header__inline-menu .list-menu--inline > li { display: inline-flex; align-items: center; }
+.header__inline-menu .list-menu--inline > li + li::before {
   content: '★';
   color: var(--tl-oxblood);
-  margin-right: 28px;
-  font-size: 11px;
-  position: relative;
-  top: -1px;
+  font-size: 8px;
+  padding: 0 14px;
+  line-height: 1;
 }
 
 /* ===== Buttons ===== */
